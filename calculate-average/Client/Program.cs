@@ -20,6 +20,17 @@ namespace Client
             });
 
             var client = new AverageService.AverageServiceClient(channel);
+            var stream = client.ComputeAverage();
+
+            for (int i = 1; i <= 4; i++)
+            {
+                await stream.RequestStream.WriteAsync(new AverageRequest() { Num = i });
+            }
+
+            await stream.RequestStream.CompleteAsync();
+            var response = await stream.ResponseAsync;
+
+            Console.WriteLine(response.Result);
             channel.ShutdownAsync().Wait();
         }
     }
