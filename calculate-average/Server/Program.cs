@@ -1,4 +1,5 @@
-﻿using Grpc.Core;
+﻿using Average;
+using Grpc.Core;
 
 namespace grpc.server
 {
@@ -13,6 +14,7 @@ namespace grpc.server
             {
                 server = new Server()
                 {
+                    Services = { AverageService.BindService(new AverageServiceImp()) },
                     Ports = { new ServerPort("localhost", port, ServerCredentials.Insecure) }
                 };
 
