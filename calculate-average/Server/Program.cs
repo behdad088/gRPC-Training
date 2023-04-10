@@ -4,7 +4,7 @@ namespace grpc.server
 {
     internal class Program
     {
-        const int port = 50052;
+        const int port = 50055;
         static void Main(string[] args)
         {
             Server server = null;
