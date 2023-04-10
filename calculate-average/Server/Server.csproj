@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -9,5 +9,13 @@
   </PropertyGroup>
 	<ItemGroup>
 		<Protobuf Include="../*.proto" OutputDir="%(RelativePath)Models/" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Google.Protobuf" Version="3.22.1" />
+	  <PackageReference Include="Grpc" Version="2.46.6" />
+	  <PackageReference Include="Grpc.Tools" Version="2.53.0">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
 	</ItemGroup>
 </Project>
