@@ -24,7 +24,7 @@ namespace Client
             {
                 while (await stream.ResponseStream.MoveNext())
                 {
-                    Console.WriteLine("Received :" + stream.ResponseStream.Current.Max);
+                    Console.WriteLine(stream.ResponseStream.Current.Max);
                 }
             });
 
