@@ -6,7 +6,7 @@ namespace grpc.server
 {
     internal class FindMaximumServiceImp : FindMaxServiceBase
     {
-        public override async Task findMaximum(IAsyncStreamReader<FindMaxRequest> requestStream, IServerStreamWriter<FindMaxResponse> responseStream, ServerCallContext context)
+        public override async Task FindMaximum(IAsyncStreamReader<FindMaxRequest> requestStream, IServerStreamWriter<FindMaxResponse> responseStream, ServerCallContext context)
         {
             var numbers = new List<int>();
             while (await requestStream.MoveNext())

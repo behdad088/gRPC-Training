@@ -12,5 +12,5 @@ message FindMaxResponse {
 
 
 service FindMaxService {
-	rpc findMaximum (stream FindMaxRequest) returns (stream FindMaxResponse) {}
+	rpc FindMaximum (stream FindMaxRequest) returns (stream FindMaxResponse) {}
 }
