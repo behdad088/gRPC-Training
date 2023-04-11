@@ -1,4 +1,5 @@
 ﻿using Grpc.Core;
+using Max;
 
 namespace grpc.server
 {
@@ -13,6 +14,7 @@ namespace grpc.server
             {
                 server = new Server()
                 {
+                    Services = { FindMaxService.BindService(new FindMaximumServiceImp()) },
                     Ports = { new ServerPort("localhost", port, ServerCredentials.Insecure) }
                 };
 
