@@ -12,10 +12,9 @@ namespace grpc.server
             while (await requestStream.MoveNext())
             {
                 var number = requestStream.Current.Number;
-
                 numbers.Add(number);
 
-                if (number > numbers.Max())
+                if (number >= numbers.Max())
                     await responseStream.WriteAsync(new FindMaxResponse() { Max = number });
             }
         }
