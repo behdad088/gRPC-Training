@@ -51,10 +51,10 @@ namespace Max {
     static readonly grpc::Marshaller<global::Max.FindMaxResponse> __Marshaller_max_FindMaxResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Max.FindMaxResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Max.FindMaxRequest, global::Max.FindMaxResponse> __Method_findMaximum = new grpc::Method<global::Max.FindMaxRequest, global::Max.FindMaxResponse>(
+    static readonly grpc::Method<global::Max.FindMaxRequest, global::Max.FindMaxResponse> __Method_FindMaximum = new grpc::Method<global::Max.FindMaxRequest, global::Max.FindMaxResponse>(
         grpc::MethodType.DuplexStreaming,
         __ServiceName,
-        "findMaximum",
+        "FindMaximum",
         __Marshaller_max_FindMaxRequest,
         __Marshaller_max_FindMaxResponse);
 
@@ -69,7 +69,7 @@ namespace Max {
     public abstract partial class FindMaxServiceBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task findMaximum(grpc::IAsyncStreamReader<global::Max.FindMaxRequest> requestStream, grpc::IServerStreamWriter<global::Max.FindMaxResponse> responseStream, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task FindMaximum(grpc::IAsyncStreamReader<global::Max.FindMaxRequest> requestStream, grpc::IServerStreamWriter<global::Max.FindMaxResponse> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -104,14 +104,14 @@ namespace Max {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncDuplexStreamingCall<global::Max.FindMaxRequest, global::Max.FindMaxResponse> findMaximum(grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncDuplexStreamingCall<global::Max.FindMaxRequest, global::Max.FindMaxResponse> FindMaximum(grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return findMaximum(new grpc::CallOptions(headers, deadline, cancellationToken));
+        return FindMaximum(new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncDuplexStreamingCall<global::Max.FindMaxRequest, global::Max.FindMaxResponse> findMaximum(grpc::CallOptions options)
+      public virtual grpc::AsyncDuplexStreamingCall<global::Max.FindMaxRequest, global::Max.FindMaxResponse> FindMaximum(grpc::CallOptions options)
       {
-        return CallInvoker.AsyncDuplexStreamingCall(__Method_findMaximum, null, options);
+        return CallInvoker.AsyncDuplexStreamingCall(__Method_FindMaximum, null, options);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -127,7 +127,7 @@ namespace Max {
     public static grpc::ServerServiceDefinition BindService(FindMaxServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_findMaximum, serviceImpl.findMaximum).Build();
+          .AddMethod(__Method_FindMaximum, serviceImpl.FindMaximum).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -137,7 +137,7 @@ namespace Max {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, FindMaxServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_findMaximum, serviceImpl == null ? null : new grpc::DuplexStreamingServerMethod<global::Max.FindMaxRequest, global::Max.FindMaxResponse>(serviceImpl.findMaximum));
+      serviceBinder.AddMethod(__Method_FindMaximum, serviceImpl == null ? null : new grpc::DuplexStreamingServerMethod<global::Max.FindMaxRequest, global::Max.FindMaxResponse>(serviceImpl.FindMaximum));
     }
 
   }

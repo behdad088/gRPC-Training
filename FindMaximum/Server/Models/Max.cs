@@ -26,7 +26,7 @@ namespace Max {
           string.Concat(
             "CgltYXgucHJvdG8SA21heCIgCg5GaW5kTWF4UmVxdWVzdBIOCgZudW1iZXIY",
             "ASABKAUiHgoPRmluZE1heFJlc3BvbnNlEgsKA21heBgBIAEoBTJQCg5GaW5k",
-            "TWF4U2VydmljZRI+CgtmaW5kTWF4aW11bRITLm1heC5GaW5kTWF4UmVxdWVz",
+            "TWF4U2VydmljZRI+CgtGaW5kTWF4aW11bRITLm1heC5GaW5kTWF4UmVxdWVz",
             "dBoULm1heC5GaW5kTWF4UmVzcG9uc2UiACgBMAFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
