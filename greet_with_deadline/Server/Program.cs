@@ -5,7 +5,7 @@ namespace greeting_with_deadline.server
 {
     internal class Program
     {
-        const int port = 50057;
+        const int port = 50058;
         static void Main(string[] args)
         {
             Server server = null;
