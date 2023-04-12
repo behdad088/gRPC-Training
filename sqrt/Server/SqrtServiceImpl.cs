@@ -13,7 +13,7 @@ namespace sqrt.server
             if (number >= 0)
                 return await Task.FromResult(new SqrtResponse() { SquareRoot = Math.Sqrt(number) });
             else
-                throw new RpcException(new Status(StatusCode.InvalidArgument, "Value cannot be below 1"));
+                throw new RpcException(new Status(StatusCode.InvalidArgument, "Value cannot be below 0"));
         }
     }
 }
