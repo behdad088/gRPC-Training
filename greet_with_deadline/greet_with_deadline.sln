@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "proto", "proto", "{EA9B046F-F16D-4CE1-ABD3-368BB244814E}"
+	ProjectSection(SolutionItems) = preProject
+		greeting.proto = greeting.proto
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{1F53E355-AF8C-4D61-AEEA-CD0E4316422C}"
 EndProject
